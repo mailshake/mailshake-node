@@ -1,0 +1,22 @@
+{
+  "name": "mailshake-node",
+  "version": "1.0.0",
+  "description": "Wrapper for the Mailshake API",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/colinmathews/mailshake-node.git"
+  },
+  "author": "Colin Mathews",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/colinmathews/mailshake-node/issues"
+  },
+  "homepage": "https://github.com/colinmathews/mailshake-node#readme",
+  "dependencies": {
+    "es6-promise": "^4.1.1"
+  }
+}
