@@ -1,6 +1,6 @@
 {
   "name": "mailshake-node",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Wrapper for the Mailshake API",
   "main": "index.js",
   "scripts": {
