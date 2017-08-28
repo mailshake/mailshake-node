@@ -116,6 +116,8 @@ app.listen(port);
 console.log(`Listening on http://127.0.0.1:${port}`);
 ```
 
+> Don't forget to change `my-api-key` to your own key.
+
 #### Subscribing to pushes
 Tell Mailshake what you want to listen for. This option will automatically format your subscription so that `PushHandler` can handle it.
 
@@ -162,7 +164,7 @@ resolvePush(mailshake, { /* the object Mailshake sent your server */ })
 ```
 
 ### A more hands-on approach when using `express`
-A `pushHandlerExpress` function is exposed on this module that encapsulates fetching the push's details and communicating back to Mailshake about the receipt being successful or not.
+In case you can't or don't want to use our more complete `PushHandler` solution,  a `pushHandlerExpress` function is exposed on this module that encapsulates fetching the push's details and communicating back to Mailshake about the receipt being successful or not.
 
 ```javascript
 let pushHandlerExpress = require('mailshake-node').pushHandlerExpress;
@@ -208,3 +210,17 @@ return mailshake.push.delete({
     console.error(`${err.code}: ${err.message}`);
   });
 ```
+
+## Contributions
+If you have improvements, please create a pull request for our consideration.
+
+## Testing
+Our test suites for this module aren't yet part of the source. At the moment only one test is wired up here as a sanity check and to test connectivity. To use it create a local `CONFIG.json` file in the root directory of this repo like this:
+
+```json
+{
+  "apiKey": "my-api-key"
+}
+```
+
+Update it with your API key and then run `npm test`.
