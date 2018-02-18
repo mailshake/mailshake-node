@@ -32,6 +32,8 @@ _See our [docs](http://api-docs.mailshake.com/) for details._
 - campaigns.get
 - campaigns.pause
 - campaigns.unpause
+- campaigns.export
+- campaigns.exportStatus
 - leads.list
 - leads.get
 - leads.close
