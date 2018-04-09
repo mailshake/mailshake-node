@@ -1,0 +1,14 @@
+language: javascript
+node:
+  - 4
+  - 6
+  - 8
+
+install:
+  - npm install
+
+script:
+  - echo "Running Linter..."
+  - npm run lint
+  - echo "Running Tests..."
+  - npm test

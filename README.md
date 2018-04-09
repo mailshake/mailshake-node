@@ -1,3 +1,8 @@
+[![Travis](https://travis-ci.org/mailshake/mailshake-node.svg?branch=master)](https://travis-ci.org/mailshake/mailshake-node)
+[![npm](https://img.shields.io/npm/v/mailshake-node.svg?maxAge=86400)](https://www.npmjs.com/package/mailshake-node)
+[![npm](https://img.shields.io/npm/dm/mailshake-node.svg?maxAge=86400)](https://www.npmjs.com/package/mailshake-node)
+[![npm](https://img.shields.io/npm/l/mailshake-node.svg?maxAge=2592000)](https://www.npmjs.com/package/mailshake-node)
+
 # mailshake-node
 This is a Node.js wrapper for the [Mailshake](https://mailshake.com) API. [View the docs here](http://api-docs.mailshake.com).
 
