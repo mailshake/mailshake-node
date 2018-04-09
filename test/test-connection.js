@@ -1,6 +1,7 @@
 const Mailshake = require('../index')(process.env.API_KEY);
-const { assert } = require('chai');
-const { describe, it } = require('mocha');
+const assert = require('chai').assert;
+const describe = require('mocha').describe;
+const it = require('mocha').it;
 
 describe('api:me', function () {
   it('should return a user model', function () {
