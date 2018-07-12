@@ -29,6 +29,25 @@ return mailshake.campaigns.list({
 
 > Don't forget to change `my-api-key` to your own key.
 
+
+### OAuth support
+mailshake-node has hooks to support most any OAuth library. You can either customize the request with `customizeRequest` or outright replace how the request is made with `overrideCreateRequest`.
+
+```javascript
+let mailshake = require('mailshake-node')({
+  customizeRequest(options) => {
+    // options.headers.authorization = [...oauth header...]
+    return options;
+  }),
+
+  // or
+
+  overrideCreateRequest(options, callbackFn) => {
+    return https(options, callbackFn);
+  })
+});
+```
+
 ### Operations
 _See our [docs](http://api-docs.mailshake.com/) for details._
 
@@ -39,6 +58,7 @@ _See our [docs](http://api-docs.mailshake.com/) for details._
 - campaigns.unpause
 - campaigns.export
 - campaigns.exportStatus
+- campaigns.create
 - leads.list
 - leads.get
 - leads.close
@@ -61,6 +81,7 @@ _See our [docs](http://api-docs.mailshake.com/) for details._
 - activity.opens
 - activity.replies
 - activity.sent
+- senders.list
 
 ### Paging
 When a request accepts paging parameters, a call to get the next page is conveniently attached to your result.
