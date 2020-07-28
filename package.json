@@ -1,6 +1,6 @@
 {
   "name": "mailshake-node",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Wrapper for the Mailshake API",
   "engines": {
     "node": ">=4.0.0"
