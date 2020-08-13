@@ -1,9 +1,9 @@
 {
   "name": "mailshake-node",
-  "version": "1.0.6",
-  "description": "Wrapper for the Mailshake API",
+  "version": "2.0.0",
+  "description": "Node.js Library for the Mailshake API",
   "engines": {
-    "node": ">=4.0.0"
+    "node": ">=10.0.0"
   },
   "main": "index.js",
   "scripts": {
@@ -14,7 +14,7 @@
     "type": "git",
     "url": "git+https://github.com/mailshake/mailshake-node.git"
   },
-  "author": "Colin Mathews",
+  "author": "Team Mailshake",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/mailshake/mailshake-node/issues"
@@ -28,7 +28,7 @@
   },
   "devDependencies": {
     "chai": "^4.1.2",
-    "mocha": "^8.0.1",
+    "mocha": "^8.1.1",
     "semistandard": "^12.0.1"
   }
 }
