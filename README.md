@@ -93,6 +93,7 @@ _See our official [API docs](http://api-docs.mailshake.com/) for details._
 - activity.opens
 - activity.replies
 - activity.sent
+- activity.leadAssignments
 - senders.list
 
 ### Paging
