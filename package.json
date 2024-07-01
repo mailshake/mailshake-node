@@ -1,9 +1,9 @@
 {
   "name": "mailshake-node",
-  "version": "2.3.0",
+  "version": "3.0.0",
   "description": "Node.js Library for the Mailshake API",
   "engines": {
-    "node": ">=10.0.0"
+    "node": ">=20.0.0"
   },
   "main": "index.js",
   "scripts": {
@@ -17,9 +17,11 @@
   "author": "Team Mailshake",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/mailshake/mailshake-node/issues"
+    "url": "https://docs.mailshake.com/",
+    "email": "hello@mailshake.com"
   },
-  "homepage": "https://github.com/mailshake/mailshake-node#readme",
+  "homepage": "https://mailshake.com",
+  "docs": "https://api-docs.mailshake.com/",
   "dependencies": {
     "es6-promise": "^4.1.1",
     "promise-retry": "^2.0.1",
